@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Türkçe Kitap Ödevi</title>
+    <title>Dinamik Sayfa Geçişi</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,6 +13,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            min-height: 100vh; /* Sayfa yüksekliği en az ekran boyutu kadar */
+            padding-bottom: 60px; /* Sayfa alt kısmına boşluk ekle */
         }
         header {
             background-color: #333;
@@ -42,14 +44,14 @@
             display: flex;
             justify-content: center;
             gap: 20px;
-            margin: 20px;
+            width: 100%;
         }
         nav button {
             background-color: #333;
             color: white;
             border: none;
             padding: 10px 20px;
-            border-radius: 30px;
+            border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
         }
@@ -84,20 +86,6 @@
         <p>Bu üçüncü sayfanın içeriğidir. Farklı bilgiler burada yer alabilir.</p>
         <img src="https://via.placeholder.com/400x300.png?text=Sayfa+3" alt="Sayfa 3 Görseli">
     </section>
-    
-    <section id="page4">
-        <h2>Sayfa 4</h2>
-        <p>Bu dördüncü sayfanın içeriğidir. Farklı bilgiler burada yer alabilir.</p>
-        <img src="https://via.placeholder.com/400x300.png?text=Sayfa+4" alt="Sayfa 4 Görseli">
-    </section>
-
-    <section id="page5">
-        <h2>Sayfa 5</h2>
-        <p>Bu beşinci sayfanın içeriğidir. Farklı bilgiler burada yer alabilir.</p>
-        <img src="https://via.placeholder.com/400x300.png?text=Sayfa+5" alt="Sayfa 5 Görseli">
-    </section>
-
-
 
     <!-- Navigasyon Butonları -->
     <nav>
@@ -107,7 +95,7 @@
 
     <script>
         let currentPage = 1;
-        const totalPages = 5; // Sayfa sayısını buradan değiştirebilirsiniz.
+        const totalPages = 3; // Sayfa sayısını buradan değiştirebilirsiniz.
 
         function changePage(direction) {
             if (direction === 'next' && currentPage < totalPages) {
