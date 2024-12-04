@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinamik Tek Sayfa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px;
+        }
+        nav button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        nav button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dinamik Tek Sayfa</h1>
+    </header>
+    <section id="content">
+        <h2>Sayfa 1</h2>
+        <p>Bu birinci sayfanın içeriğidir. Burada istediğiniz bilgiyi sunabilirsiniz.</p>
+        <img src="https://via.placeholder.com/400x300.png?text=Sayfa+1" alt="Sayfa 1 Görseli">
+    </section>
+    <nav>
+        <button onclick="changePage(1)">Sayfa 1</button>
+        <button onclick="changePage(2)">Sayfa 2</button>
+        <button onclick="changePage(3)">Sayfa 3</button>
+    </nav>
+    <script>
+        function changePage(page) {
+            const content = document.getElementById("content");
+            if (page === 1) {
+                content.innerHTML = `
+                    <h2>Sayfa 1</h2>
+                    <p>Bu birinci sayfanın içeriğidir. Burada istediğiniz bilgiyi sunabilirsiniz.</p>
+                    <img src="https://via.placeholder.com/400x300.png?text=Sayfa+1" alt="Sayfa 1 Görseli">
+                `;
+            } else if (page === 2) {
+                content.innerHTML = `
+                    <h2>Sayfa 2</h2>
+                    <p>Bu ikinci sayfanın içeriğidir. İçeriği değiştirmek için düzenleyin.</p>
+                    <img src="https://via.placeholder.com/400x300.png?text=Sayfa+2" alt="Sayfa 2 Görseli">
+                `;
+            } else if (page === 3) {
+                content.innerHTML = `
+                    <h2>Sayfa 3</h2>
+                    <p>Bu üçüncü sayfanın içeriğidir. Farklı bilgiler burada yer alabilir.</p>
+                    <img src="https://via.placeholder.com/400x300.png?text=Sayfa+3" alt="Sayfa 3 Görseli">
+                `;
+            }
+        }
+    </script>
+</body>
+</html>
