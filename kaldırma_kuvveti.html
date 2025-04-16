@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suyun Kaldırma Kuvveti Sunumu</title>
+    <title>Suyun Kaldırma Kuvveti Sunumu - Sayfa 1</title>
     <style>
         body {
             font-family: sans-serif;
@@ -26,9 +26,9 @@
             line-height: 1.6;
         }
         .formula-container {
-            display: flex; /* İçindeki öğeleri hizalamak için */
-            justify-content: center; /* Yatayda ortalamak için */
-            margin: 15px 0; /* Üst ve alt boşluk */
+            display: flex;
+            justify-content: center;
+            margin: 15px 0;
         }
         .formula {
             font-weight: bold;
@@ -57,13 +57,29 @@
             font-style: italic;
             color: #dc3545;
         }
+        .navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .navigation a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 5px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .navigation a:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Suyun Kaldırma Kuvveti</h1>
-            <p>Fizik sunumu için hazırlanmıştır.</p>
+            <p>Fizik sunumu için hazırlanmıştır - Sayfa 1</p>
         </header>
 
         <section class="section">
@@ -88,34 +104,9 @@
             <p>Bu formül, kaldırma kuvvetinin sıvının yoğunluğu, batan hacim ve yerçekimi ivmesi ile doğru orantılı olduğunu gösterir.</p>
         </section>
 
-        <section class="section">
-            <h2>Yüzme ve Batma Olayı</h2>
-            <p>Bir cismin bir sıvıda yüzüp batmaması, cisme etki eden kaldırma kuvveti ile cismin ağırlığı arasındaki ilişkiye bağlıdır.</p>
-            <ul style="list-style-type:disc;">
-                <li class="list-item">Eğer kaldırma kuvveti ($F_k$), cismin ağırlığından ($G$) büyük ise cisim <span class="emphasize">yüzer</span>.</li>
-                <li class="list-item">Eğer kaldırma kuvveti ($F_k$), cismin ağırlığına ($G$) eşit ise cisim sıvı içinde <span class="emphasize">askıda kalır</span>.</li>
-                <li class="list-item">Eğer kaldırma kuvveti ($F_k$), cismin ağırlığından ($G$) küçük ise cisim <span class="emphasize">batar</span>.</li>
-            </ul>
-            <p>Cismin ağırlığı ($G$), kütlesi ($m$) ile yerçekimi ivmesinin ($g$) çarpımıdır: $G = m \cdot g$. Cismin kütlesi ise yoğunluğu ($\rho_{cisim}$) ile hacminin ($V_{cisim}$) çarpımıdır: $m = \rho_{cisim} \cdot V_{cisim}$.</p>
-            <p>Bu nedenle, yüzme ve batma durumu cismin ve sıvının yoğunlukları arasındaki ilişkiye de bağlıdır:</p>
-            <ul style="list-style-type:disc;">
-                <li class="list-item">Eğer $\rho_{cisim} < \rho_{sıvı}$ ise cisim yüzer.</li>
-                <li class="list-item">Eğer $\rho_{cisim} = \rho_{sıvı}$ ise cisim askıda kalır.</li>
-                <li class="list-item">Eğer $\rho_{cisim} > \rho_{sıvı}$ ise cisim batar.</li>
-            </ul>
-        </section>
-
-        <section class="section">
-            <h2>Kaldırma Kuvvetinin Uygulama Alanları</h2>
-            <p>Kaldırma kuvveti, günlük hayatta ve teknolojide birçok alanda önemli bir rol oynar:</p>
-            <ul style="list-style-type:disc;">
-                <li class="list-item"><b>Gemiler ve Tekneler:</b> Gemilerin ve teknelerin yüzmesi, suyun uyguladığı kaldırma kuvveti sayesinde mümkün olur. Gövdeleri, yer değiştirdikleri suyun ağırlığı kadar bir kaldırma kuvveti oluşturacak şekilde tasarlanır.</li>
-                <li class="list-item"><b>Denizaltılar:</b> Denizaltılar, kaldırma kuvvetini kontrol ederek batıp çıkabilirler. Balast tanklarına su alıp vererek ağırlıklarını ve dolayısıyla kaldırma kuvvetiyle dengelerini ayarlarlar.</li>
-                <li class="list-item"><b>Balonlar:</b> Sıcak hava balonları, içlerindeki sıcak havanın yoğunluğu dışarıdaki soğuk havanın yoğunluğundan daha az olduğu için havanın kaldırma kuvvetiyle yükselirler.</li>
-                <li class="list-item"><b>Yüzme ve Dalma:</b> İnsanlar ve diğer canlılar, suyun kaldırma kuvvetinden faydalanarak yüzer veya dalar.</li>
-                <li class="list-item"><b>Hidrometre:</b> Sıvıların yoğunluğunu ölçmek için kullanılan hidrometreler, kaldırma kuvveti prensibine göre çalışır.</li>
-            </ul>
-        </section>
+        <div class="navigation">
+            <a href="kaldırma_kuvveti_sayfa2.html">Sonraki Sayfa</a>
+        </div>
 
         <footer>
             <p>&copy; 2025 Fizik Sunumu</p>
